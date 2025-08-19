@@ -12,39 +12,40 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        # https://github.com/actions/runner-images
         include:
           # AMD64 builds on x86 runners
           - dockerfile: ./docker/app.Dockerfile
             image: scrydon/sim-studio
             platform: linux/amd64
             arch: amd64
-            runner: linux-x64-4-core
+            runner: ubuntu-latest
           - dockerfile: ./docker/db.Dockerfile
             image: scrydon/sim-migrations
             platform: linux/amd64
             arch: amd64
-            runner: linux-x64-4-core
+            runner: ubuntu-latest
           - dockerfile: ./docker/realtime.Dockerfile
             image: scrydon/sim-realtime
             platform: linux/amd64
             arch: amd64
-            runner: linux-x64-4-core
+            runner: ubuntu-latest
           # ARM64 builds on native ARM64 runners
-          - dockerfile: ./docker/app.Dockerfile
-            image: scrydon/sim-studio
-            platform: linux/arm64
-            arch: arm64
-            runner: linux-arm64-4-core
-          - dockerfile: ./docker/db.Dockerfile
-            image: scrydon/sim-migrations
-            platform: linux/arm64
-            arch: arm64
-            runner: linux-arm64-4-core
-          - dockerfile: ./docker/realtime.Dockerfile
-            image: scrydon/sim-realtime
-            platform: linux/arm64
-            arch: arm64
-            runner: linux-arm64-4-core
+          # - dockerfile: ./docker/app.Dockerfile
+          #   image: scrydon/sim-studio
+          #   platform: linux/arm64
+          #   arch: arm64
+          #   runner: linux-arm64-4-core
+          # - dockerfile: ./docker/db.Dockerfile
+          #   image: scrydon/sim-migrations
+          #   platform: linux/arm64
+          #   arch: arm64
+          #   runner: linux-arm64-4-core
+          # - dockerfile: ./docker/realtime.Dockerfile
+          #   image: scrydon/sim-realtime
+          #   platform: linux/arm64
+          #   arch: arm64
+          #   runner: linux-arm64-4-core
     runs-on: ${{ matrix.runner }}
     permissions:
       contents: read

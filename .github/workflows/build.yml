@@ -99,9 +99,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/scrydon/sim-studio
-          - image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/scrydon/sim-migrations
-          - image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/scrydon/sim-realtime
+          - image: scrydon/sim-studio
+          - image: scrydon/sim-migrations
+          - image: scrydon/sim-realtime
     permissions:
       contents: read
       packages: write

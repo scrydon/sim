@@ -55,7 +55,14 @@ jobs:
       - name: 🔄 Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🛠️ Set up Docker Buildx
+      - name: � Start Docker (colima) on macOS
+        if: runner.os == 'macOS'
+        run: |
+          brew install docker colima || true
+          sudo colima start --arch aarch64 --cpu 4 --memory 4
+          colima status
+
+      - name: �🛠️ Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
       - name: 🔐 Log in to the Container registry

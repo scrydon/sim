@@ -59,7 +59,7 @@ jobs:
         if: runner.os == 'macOS'
         run: |
           brew install docker colima || true
-          sudo colima start --arch aarch64 --cpu 4 --memory 4
+          colima start --arch aarch64 --cpu 4 --memory 4
           colima status
 
       - name: �🛠️ Set up Docker Buildx

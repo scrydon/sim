@@ -6,6 +6,7 @@ import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { isDev } from '@/lib/environment'
+import { createLogger } from '@/lib/logs/console/logger'
 import { generateFolderName } from '@/lib/naming'
 import { cn } from '@/lib/utils'
 import { useUserPermissionsContext } from '@/app/workspace/[workspaceId]/providers/workspace-permissions-provider'
@@ -13,9 +14,8 @@ import { useFolderStore } from '@/stores/folders/store'
 import { useWorkflowDiffStore } from '@/stores/workflow-diff/store'
 import { useWorkflowRegistry } from '@/stores/workflows/registry/store'
 import { parseWorkflowYaml } from '@/stores/workflows/yaml/importer'
-import { createLogger } from '@/lib/logs/console/logger'
 
-const logger = createLogger('CreateMenu');
+const logger = createLogger('CreateMenu')
 
 // Constants
 const TIMERS = {

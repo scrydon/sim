@@ -1,10 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "type": "object",
-  "required": [
-    "app",
-    "realtime"
-  ],
+  "required": ["app", "realtime"],
   "properties": {
     "global": {
       "type": "object",
@@ -33,9 +30,7 @@
     },
     "app": {
       "type": "object",
-      "required": [
-        "enabled"
-      ],
+      "required": ["enabled"],
       "properties": {
         "enabled": {
           "type": "boolean",
@@ -121,11 +116,7 @@
             },
             "NODE_ENV": {
               "type": "string",
-              "enum": [
-                "development",
-                "test",
-                "production"
-              ],
+              "enum": ["development", "test", "production"],
               "description": "Runtime environment"
             },
             "NEXT_TELEMETRY_DISABLED": {
@@ -284,9 +275,7 @@
     },
     "realtime": {
       "type": "object",
-      "required": [
-        "enabled"
-      ],
+      "required": ["enabled"],
       "properties": {
         "enabled": {
           "type": "boolean",
@@ -361,11 +350,7 @@
             },
             "NODE_ENV": {
               "type": "string",
-              "enum": [
-                "development",
-                "test",
-                "production"
-              ],
+              "enum": ["development", "test", "production"],
               "description": "Runtime environment"
             }
           }
@@ -485,14 +470,7 @@
         },
         "sslMode": {
           "type": "string",
-          "enum": [
-            "disable",
-            "allow",
-            "prefer",
-            "require",
-            "verify-ca",
-            "verify-full"
-          ],
+          "enum": ["disable", "allow", "prefer", "require", "verify-ca", "verify-full"],
           "description": "SSL mode for database connection"
         }
       },
@@ -504,12 +482,7 @@
         }
       },
       "then": {
-        "required": [
-          "host",
-          "username",
-          "password",
-          "database"
-        ]
+        "required": ["host", "username", "password", "database"]
       }
     },
     "autoscaling": {
@@ -538,10 +511,7 @@
         }
       },
       "then": {
-        "required": [
-          "minReplicas",
-          "maxReplicas"
-        ]
+        "required": ["minReplicas", "maxReplicas"]
       }
     },
     "ollama": {
@@ -651,10 +621,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": [
-              "name",
-              "size"
-            ],
+            "required": ["name", "size"],
             "properties": {
               "name": {
                 "type": "string",
@@ -740,9 +707,7 @@
                 "const": true
               }
             },
-            "required": [
-              "enabled"
-            ]
+            "required": ["enabled"]
           }
         }
       }

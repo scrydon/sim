@@ -1,7 +1,7 @@
 import path from 'path'
 import type { NextConfig } from 'next'
 import { env, isTruthy } from './lib/env'
-import { isDev, isHosted, isProd } from './lib/environment'
+import { isDev, isHosted } from './lib/environment'
 import { getMainCSPPolicy, getWorkflowExecutionCSPPolicy } from './lib/security/csp'
 
 const nextConfig: NextConfig = {
@@ -33,11 +33,11 @@ const nextConfig: NextConfig = {
       // Custom domain for file storage if configured
       ...(env.NEXT_PUBLIC_BLOB_BASE_URL
         ? [
-          {
-            protocol: 'https' as const,
-            hostname: new URL(env.NEXT_PUBLIC_BLOB_BASE_URL).hostname,
-          },
-        ]
+            {
+              protocol: 'https' as const,
+              hostname: new URL(env.NEXT_PUBLIC_BLOB_BASE_URL).hostname,
+            },
+          ]
         : []),
     ],
   },
@@ -59,12 +59,12 @@ const nextConfig: NextConfig = {
     allowedDevOrigins: [
       ...(env.NEXT_PUBLIC_APP_URL
         ? (() => {
-          try {
-            return [new URL(env.NEXT_PUBLIC_APP_URL).host]
-          } catch {
-            return []
-          }
-        })()
+            try {
+              return [new URL(env.NEXT_PUBLIC_APP_URL).host]
+            } catch {
+              return []
+            }
+          })()
         : []),
       'localhost:3000',
       'localhost:3001',

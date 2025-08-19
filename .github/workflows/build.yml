@@ -15,33 +15,33 @@ jobs:
         include:
           # AMD64 builds on x86 runners
           - dockerfile: ./docker/app.Dockerfile
-            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/scrydon/sim-studio
+            image: scrydon/sim-studio
             platform: linux/amd64
             arch: amd64
             runner: linux-x64-4-core
           - dockerfile: ./docker/db.Dockerfile
-            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/scrydon/sim-migrations
+            image: scrydon/sim-migrations
             platform: linux/amd64
             arch: amd64
             runner: linux-x64-4-core
           - dockerfile: ./docker/realtime.Dockerfile
-            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/scrydon/sim-realtime
+            image: scrydon/sim-realtime
             platform: linux/amd64
             arch: amd64
             runner: linux-x64-4-core
           # ARM64 builds on native ARM64 runners
           - dockerfile: ./docker/app.Dockerfile
-            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/scrydon/sim-studio
+            image: scrydon/sim-studio
             platform: linux/arm64
             arch: arm64
             runner: linux-arm64-4-core
           - dockerfile: ./docker/db.Dockerfile
-            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/scrydon/sim-migrations
+            image: scrydon/sim-migrations
             platform: linux/arm64
             arch: arm64
             runner: linux-arm64-4-core
           - dockerfile: ./docker/realtime.Dockerfile
-            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/scrydon/sim-realtime
+            image: scrydon/sim-realtime
             platform: linux/arm64
             arch: arm64
             runner: linux-arm64-4-core
@@ -69,7 +69,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ matrix.image }}
+          images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ matrix.image }}
           tags: |
             type=raw,value=latest-${{ matrix.arch }},enable=${{ github.ref == 'refs/heads/main' }}
             type=ref,event=pr,suffix=-${{ matrix.arch }}
@@ -118,7 +118,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ matrix.image }}
+          images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ matrix.image }}
           tags: |
             type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
             type=ref,event=pr

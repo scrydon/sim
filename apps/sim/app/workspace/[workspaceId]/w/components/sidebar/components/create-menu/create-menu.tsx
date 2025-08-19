@@ -1,7 +1,6 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { logger } from '@sentry/nextjs'
 import { Folder, Plus, Upload } from 'lucide-react'
 import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
@@ -14,6 +13,9 @@ import { useFolderStore } from '@/stores/folders/store'
 import { useWorkflowDiffStore } from '@/stores/workflow-diff/store'
 import { useWorkflowRegistry } from '@/stores/workflows/registry/store'
 import { parseWorkflowYaml } from '@/stores/workflows/yaml/importer'
+import { createLogger } from '@/lib/logs/console/logger'
+
+const logger = createLogger('CreateMenu');
 
 // Constants
 const TIMERS = {

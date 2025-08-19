@@ -1,5 +1,4 @@
 import path from 'path'
-import { withSentryConfig } from '@sentry/nextjs'
 import type { NextConfig } from 'next'
 import { env, isTruthy } from './lib/env'
 import { isDev, isHosted, isProd } from './lib/environment'
@@ -34,11 +33,11 @@ const nextConfig: NextConfig = {
       // Custom domain for file storage if configured
       ...(env.NEXT_PUBLIC_BLOB_BASE_URL
         ? [
-            {
-              protocol: 'https' as const,
-              hostname: new URL(env.NEXT_PUBLIC_BLOB_BASE_URL).hostname,
-            },
-          ]
+          {
+            protocol: 'https' as const,
+            hostname: new URL(env.NEXT_PUBLIC_BLOB_BASE_URL).hostname,
+          },
+        ]
         : []),
     ],
   },
@@ -60,12 +59,12 @@ const nextConfig: NextConfig = {
     allowedDevOrigins: [
       ...(env.NEXT_PUBLIC_APP_URL
         ? (() => {
-            try {
-              return [new URL(env.NEXT_PUBLIC_APP_URL).host]
-            } catch {
-              return []
-            }
-          })()
+          try {
+            return [new URL(env.NEXT_PUBLIC_APP_URL).host]
+          } catch {
+            return []
+          }
+        })()
         : []),
       'localhost:3000',
       'localhost:3001',
@@ -223,20 +222,4 @@ const nextConfig: NextConfig = {
   },
 }
 
-const sentryConfig = {
-  silent: true,
-  org: env.SENTRY_ORG || '',
-  project: env.SENTRY_PROJECT || '',
-  authToken: env.SENTRY_AUTH_TOKEN || undefined,
-  disableSourceMapUpload: !isProd,
-  autoInstrumentServerFunctions: isProd,
-  bundleSizeOptimizations: {
-    excludeDebugStatements: true,
-    excludePerformanceMonitoring: true,
-    excludeReplayIframe: true,
-    excludeReplayShadowDom: true,
-    excludeReplayWorker: true,
-  },
-}
-
-export default isDev ? nextConfig : withSentryConfig(nextConfig, sentryConfig)
+export default isDev ? nextConfig : nextConfig

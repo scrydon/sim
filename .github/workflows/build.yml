@@ -139,24 +139,41 @@ jobs:
 
             # The architecture-specific images have -amd64 and -arm64 suffixes
             amd64_image="${manifest_tag}-amd64"
-            arm64_image="${manifest_tag}-arm64"
+            # arm64_image="${manifest_tag}-arm64"
 
-            echo "Looking for images: $amd64_image and $arm64_image"
+            echo "Looking for images: $amd64_image"
 
             # Check if both architecture images exist
-            if docker manifest inspect "$amd64_image" >/dev/null 2>&1 && docker manifest inspect "$arm64_image" >/dev/null 2>&1; then
+            if docker manifest inspect "$amd64_image" >/dev/null 2>&1; then
               echo "Both images found, creating manifest..."
               docker manifest create "$manifest_tag" \
-                "$amd64_image" \
-                "$arm64_image"
+                "$amd64_image"
               docker manifest push "$manifest_tag"
               echo "Successfully created and pushed manifest for $manifest_tag"
             else
               echo "Error: One or both architecture images not found"
               echo "Checking AMD64 image: $amd64_image"
               docker manifest inspect "$amd64_image" || echo "AMD64 image not found"
-              echo "Checking ARM64 image: $arm64_image"
-              docker manifest inspect "$arm64_image" || echo "ARM64 image not found"
               exit 1
             fi
+
+            # echo "Looking for images: $amd64_image and $arm64_image"
+
+            # # Check if both architecture images exist
+            # if docker manifest inspect "$amd64_image" >/dev/null 2>&1 && docker manifest inspect "$arm64_image" >/dev/null 2>&1; then
+            #   echo "Both images found, creating manifest..."
+            #   docker manifest create "$manifest_tag" \
+            #     "$amd64_image" \
+            #     "$arm64_image"
+            #   docker manifest push "$manifest_tag"
+            #   echo "Successfully created and pushed manifest for $manifest_tag"
+            # else
+            #   echo "Error: One or both architecture images not found"
+            #   echo "Checking AMD64 image: $amd64_image"
+            #   docker manifest inspect "$amd64_image" || echo "AMD64 image not found"
+            #   echo "Checking ARM64 image: $arm64_image"
+            #   docker manifest inspect "$arm64_image" || echo "ARM64 image not found"
+            #   exit 1
+            # fi
+          
           done

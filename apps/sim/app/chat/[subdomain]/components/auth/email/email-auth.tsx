@@ -133,7 +133,7 @@ export default function EmailAuth({
   }
 
   return (
-    <Dialog open={true} onOpenChange={() => { }}>
+    <Dialog open={true} onOpenChange={() => {}}>
       <DialogContent
         className='flex flex-col gap-0 overflow-hidden p-0 sm:max-w-[450px]'
         hideCloseButton

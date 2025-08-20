@@ -113,7 +113,8 @@
       "correctness": {
         "useExhaustiveDependencies": "off",
         "noUnusedFunctionParameters": "off",
-        "noUnusedVariables": "off"
+        "noUnusedVariables": "off",
+        "useHookAtTopLevel": "off"
       },
       "security": {
         "noDangerouslySetInnerHtml": "off"
@@ -139,7 +140,8 @@
       },
       "performance": {
         "noAccumulatingSpread": "off",
-        "noDelete": "error"
+        "noDelete": "error",
+        "noImgElement": "off"
       }
     }
   },

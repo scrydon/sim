@@ -229,7 +229,7 @@ async function sendInvitationEmail({
   token: string
 }) {
   try {
-    const baseUrl = env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+    const baseUrl = env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
     // Always use the client-side invite route with token parameter
     const invitationLink = `${baseUrl}/invite/${token}?token=${token}`
 

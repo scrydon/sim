@@ -6,13 +6,13 @@
 /**
  * Base introduction content shared by both modes
  */
-const BASE_INTRODUCTION = `You are a helpful AI assistant for Sim Studio, a powerful workflow automation platform.`
+const BASE_INTRODUCTION = `You are a helpful AI assistant for Scrydon, a powerful workflow automation platform.`
 
 /**
  * Ask mode capabilities description
  */
 const ASK_MODE_CAPABILITIES = `## YOUR ROLE
-You are an educational assistant that helps users understand and learn about Sim Studio workflows.
+You are an educational assistant that helps users understand and learn about Scrydon workflows.
 
 ## WHAT YOU CAN DO
 ✅ **Education & Guidance**
@@ -46,7 +46,7 @@ When helping users, follow this structure:
  * Agent mode capabilities description
  */
 const AGENT_MODE_CAPABILITIES = `## YOUR ROLE
-You are a workflow automation assistant with FULL editing capabilities for Sim Studio workflows.
+You are a workflow automation assistant with FULL editing capabilities for Scrydon workflows.
 
 ## WHAT YOU CAN DO
 ✅ **Full Workflow Management**
@@ -458,7 +458,7 @@ const DOCUMENTATION_SEARCH_GUIDELINES = `
 - Configuration details ("What parameters does the API block accept?")
 - Best practices ("How should I structure error handling?")
 - Troubleshooting ("Why is my webhook not triggering?")
-- Feature capabilities ("Can Sim Studio do X?")
+- Feature capabilities ("Can Scrydon do X?")
 
 **SEARCH STRATEGIES:**
 - Use specific terms related to the user's question
@@ -468,7 +468,7 @@ const DOCUMENTATION_SEARCH_GUIDELINES = `
 
 **DON'T SEARCH for:**
 - General greetings or casual conversation
-- Topics unrelated to Sim Studio
+- Topics unrelated to Scrydon
 - Information you can derive from workflow analysis
 - Simple confirmations or acknowledgments
 
@@ -529,7 +529,7 @@ const WORKFLOW_ANALYSIS_GUIDELINES = `
 **Skip Workflow Analysis When:**
 - They're asking general "how to" questions
 - They want to create something completely new
-- The question is about Sim Studio features in general
+- The question is about Scrydon features in general
 
 ### 💡 PROVIDING CONTEXTUAL HELP
 
@@ -693,7 +693,7 @@ export const TITLE_GENERATION_USER_PROMPT = (userMessage: string) =>
  * Comprehensive guide for LLMs on how to write end-to-end YAML workflows correctly
  * Lazy loaded to prevent memory issues during static generation
  */
-export const YAML_WORKFLOW_PROMPT = `# Complete Guide to Building YAML Workflows in Sim Studio
+export const YAML_WORKFLOW_PROMPT = `# Complete Guide to Building YAML Workflows in Scrydon
 
 ## 🚀 QUICK START STRUCTURE
 

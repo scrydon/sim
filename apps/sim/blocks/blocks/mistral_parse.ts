@@ -7,7 +7,7 @@ export const MistralParseBlock: BlockConfig<MistralParserOutput> = {
   name: 'Mistral Parser',
   description: 'Extract text from PDF documents',
   longDescription: `Extract text and structure from PDF documents using Mistral's OCR API. Either enter a URL to a PDF document or upload a PDF file directly. Configure processing options and get the content in your preferred format. For URLs, they must be publicly accessible and point to a valid PDF file. Note: Google Drive, Dropbox, and other cloud storage links are not supported; use a direct download URL from a web server instead.`,
-  docsLink: 'https://docs.sim.ai/tools/mistral_parse',
+  docsLink: 'https://docs.scrydon.eu/tools/mistral_parse',
   category: 'tools',
   bgColor: '#000000',
   icon: MistralIcon,

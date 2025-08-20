@@ -89,8 +89,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name='twitter:image:width' content='1200' />
         <meta name='twitter:image:height' content='675' />
         <meta name='twitter:image:alt' content='Sim - AI Agent Builder' />
-        <meta name='twitter:url' content='https://sim.ai' />
-        <meta name='twitter:domain' content='sim.ai' />
+        <meta name='twitter:url' content='https://scrydon.eu' />
+        <meta name='twitter:domain' content='scrydon.eu' />
 
         {/* Additional image sources */}
         <link rel='image_src' href={getAssetUrl('social/facebook.png')} />

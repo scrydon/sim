@@ -218,7 +218,7 @@ export function SearchModal({
         id: 'docs',
         name: 'Docs',
         icon: BookOpen,
-        href: brand.documentationUrl || 'https://docs.sim.ai/',
+        href: brand.documentationUrl || 'https://docs.scrydon.eu/',
       },
     ],
     [workspaceId]
@@ -626,11 +626,10 @@ export function SearchModal({
                         key={block.id}
                         onClick={() => handleBlockClick(block.type)}
                         data-nav-item={`blocks-${index}`}
-                        className={`flex h-auto w-[180px] flex-shrink-0 cursor-pointer flex-col items-start gap-2 rounded-[8px] border p-3 transition-all duration-200 ${
-                          isItemSelected('blocks', index)
+                        className={`flex h-auto w-[180px] flex-shrink-0 cursor-pointer flex-col items-start gap-2 rounded-[8px] border p-3 transition-all duration-200 ${isItemSelected('blocks', index)
                             ? 'border-border bg-secondary/80'
                             : 'border-border/40 bg-background/60 hover:border-border hover:bg-secondary/80'
-                        }`}
+                          }`}
                       >
                         <div className='flex items-center gap-2'>
                           <div
@@ -672,11 +671,10 @@ export function SearchModal({
                         key={tool.id}
                         onClick={() => handleBlockClick(tool.type)}
                         data-nav-item={`tools-${index}`}
-                        className={`flex h-auto w-[180px] flex-shrink-0 cursor-pointer flex-col items-start gap-2 rounded-[8px] border p-3 transition-all duration-200 ${
-                          isItemSelected('tools', index)
+                        className={`flex h-auto w-[180px] flex-shrink-0 cursor-pointer flex-col items-start gap-2 rounded-[8px] border p-3 transition-all duration-200 ${isItemSelected('tools', index)
                             ? 'border-border bg-secondary/80'
                             : 'border-border/40 bg-background/60 hover:border-border hover:bg-secondary/80'
-                        }`}
+                          }`}
                       >
                         <div className='flex items-center gap-2'>
                           <div
@@ -716,29 +714,28 @@ export function SearchModal({
                     {loading
                       ? renderSkeletonCards()
                       : filteredTemplates.map((template, index) => (
-                          <div
-                            key={template.id}
-                            data-nav-item={`templates-${index}`}
-                            className={`w-80 flex-shrink-0 rounded-lg transition-all duration-200 ${
-                              isItemSelected('templates', index) ? 'opacity-75' : 'opacity-100'
+                        <div
+                          key={template.id}
+                          data-nav-item={`templates-${index}`}
+                          className={`w-80 flex-shrink-0 rounded-lg transition-all duration-200 ${isItemSelected('templates', index) ? 'opacity-75' : 'opacity-100'
                             }`}
-                          >
-                            <TemplateCard
-                              id={template.id}
-                              title={template.title}
-                              description={template.description}
-                              author={template.author}
-                              usageCount={template.usageCount}
-                              stars={template.stars}
-                              icon={template.icon}
-                              iconColor={template.iconColor}
-                              state={template.state}
-                              isStarred={template.isStarred}
-                              onTemplateUsed={handleTemplateUsed}
-                              onStarChange={handleStarChange}
-                            />
-                          </div>
-                        ))}
+                        >
+                          <TemplateCard
+                            id={template.id}
+                            title={template.title}
+                            description={template.description}
+                            author={template.author}
+                            usageCount={template.usageCount}
+                            stars={template.stars}
+                            icon={template.icon}
+                            iconColor={template.iconColor}
+                            state={template.state}
+                            isStarred={template.isStarred}
+                            onTemplateUsed={handleTemplateUsed}
+                            onStarChange={handleStarChange}
+                          />
+                        </div>
+                      ))}
                   </div>
                 </div>
               )}
@@ -768,11 +765,10 @@ export function SearchModal({
                                   : handleNavigationClick(workspace.href)
                               }
                               data-nav-item={`list-${globalIndex}`}
-                              className={`flex h-10 w-full items-center gap-3 rounded-[8px] px-3 py-2 transition-colors focus:outline-none ${
-                                isItemSelected('list', globalIndex)
+                              className={`flex h-10 w-full items-center gap-3 rounded-[8px] px-3 py-2 transition-colors focus:outline-none ${isItemSelected('list', globalIndex)
                                   ? 'bg-accent text-accent-foreground'
                                   : 'hover:bg-accent/60 focus:bg-accent/60'
-                              }`}
+                                }`}
                             >
                               <div className='flex h-5 w-5 items-center justify-center'>
                                 <Building2 className='h-4 w-4 text-muted-foreground' />
@@ -806,11 +802,10 @@ export function SearchModal({
                                   : handleNavigationClick(workflow.href)
                               }
                               data-nav-item={`list-${globalIndex}`}
-                              className={`flex h-10 w-full items-center gap-3 rounded-[8px] px-3 py-2 transition-colors focus:outline-none ${
-                                isItemSelected('list', globalIndex)
+                              className={`flex h-10 w-full items-center gap-3 rounded-[8px] px-3 py-2 transition-colors focus:outline-none ${isItemSelected('list', globalIndex)
                                   ? 'bg-accent text-accent-foreground'
                                   : 'hover:bg-accent/60 focus:bg-accent/60'
-                              }`}
+                                }`}
                             >
                               <div className='flex h-5 w-5 items-center justify-center'>
                                 <Workflow className='h-4 w-4 text-muted-foreground' />
@@ -841,11 +836,10 @@ export function SearchModal({
                               key={page.id}
                               onClick={() => handlePageClick(page.href)}
                               data-nav-item={`list-${globalIndex}`}
-                              className={`flex h-10 w-full items-center gap-3 rounded-[8px] px-3 py-2 transition-colors focus:outline-none ${
-                                isItemSelected('list', globalIndex)
+                              className={`flex h-10 w-full items-center gap-3 rounded-[8px] px-3 py-2 transition-colors focus:outline-none ${isItemSelected('list', globalIndex)
                                   ? 'bg-accent text-accent-foreground'
                                   : 'hover:bg-accent/60 focus:bg-accent/60'
-                              }`}
+                                }`}
                             >
                               <div className='flex h-5 w-5 items-center justify-center'>
                                 <page.icon className='h-4 w-4 text-muted-foreground' />
@@ -879,11 +873,10 @@ export function SearchModal({
                               key={doc.id}
                               onClick={() => handleDocsClick(doc.href)}
                               data-nav-item={`list-${globalIndex}`}
-                              className={`flex h-10 w-full items-center gap-3 rounded-[8px] px-3 py-2 transition-colors focus:outline-none ${
-                                isItemSelected('list', globalIndex)
+                              className={`flex h-10 w-full items-center gap-3 rounded-[8px] px-3 py-2 transition-colors focus:outline-none ${isItemSelected('list', globalIndex)
                                   ? 'bg-accent text-accent-foreground'
                                   : 'hover:bg-accent/60 focus:bg-accent/60'
-                              }`}
+                                }`}
                             >
                               <div className='flex h-5 w-5 items-center justify-center'>
                                 <doc.icon className='h-4 w-4 text-muted-foreground' />

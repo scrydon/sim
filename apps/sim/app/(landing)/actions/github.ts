@@ -26,7 +26,7 @@ export async function getFormattedGitHubStars(): Promise<string> {
       headers: {
         Accept: 'application/vnd.github+json',
         'X-GitHub-Api-Version': '2022-11-28',
-        'User-Agent': 'SimStudio/1.0',
+        'User-Agent': 'Scrydon/1.0',
         ...(token ? { Authorization: `Bearer ${token}` } : {}),
       },
       next: { revalidate: 3600 },
@@ -83,7 +83,7 @@ export async function getRepositoryStats(): Promise<RepoStats> {
     const headers = {
       Accept: 'application/vnd.github+json',
       'X-GitHub-Api-Version': '2022-11-28',
-      'User-Agent': 'SimStudio/1.0',
+      'User-Agent': 'Scrydon/1.0',
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
     }
 
@@ -143,7 +143,7 @@ export async function getContributors(): Promise<Contributor[]> {
     const headers = {
       Accept: 'application/vnd.github+json',
       'X-GitHub-Api-Version': '2022-11-28',
-      'User-Agent': 'SimStudio/1.0',
+      'User-Agent': 'Scrydon/1.0',
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
     }
 
@@ -178,7 +178,7 @@ export async function getCommitsData(): Promise<CommitData[]> {
     const headers = {
       Accept: 'application/vnd.github+json',
       'X-GitHub-Api-Version': '2022-11-28',
-      'User-Agent': 'SimStudio/1.0',
+      'User-Agent': 'Scrydon/1.0',
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
     }
 

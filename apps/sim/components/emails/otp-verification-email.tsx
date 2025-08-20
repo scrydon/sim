@@ -23,7 +23,7 @@ interface OTPVerificationEmailProps {
   chatTitle?: string
 }
 
-const baseUrl = env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+const baseUrl = env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
 
 const getSubjectByType = (type: string, brandName: string, chatTitle?: string) => {
   switch (type) {

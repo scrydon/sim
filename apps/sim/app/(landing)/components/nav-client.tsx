@@ -80,7 +80,7 @@ const NavLinks = ({
   const navigationLinks = [
     // { href: "/", label: "Marketplace" },
     ...(currentPath !== '/' ? [{ href: '/', label: 'Home' }] : []),
-    { href: 'https://docs.sim.ai/', label: 'Docs', external: true },
+    { href: 'https://docs.scrydon.eu/', label: 'Docs', external: true },
     // { href: '/', label: 'Blog' },
     { href: '/contributors', label: 'Contributors' },
   ]
@@ -88,9 +88,8 @@ const NavLinks = ({
   const handleContributorsHover = usePrefetchOnHover()
 
   // Common CSS class for navigation items
-  const navItemClass = `text-white/60 hover:text-white/100 text-base ${
-    mobile ? 'p-2.5 text-lg font-medium text-left' : 'p-1.5'
-  } rounded-md transition-colors duration-200 block md:inline-block`
+  const navItemClass = `text-white/60 hover:text-white/100 text-base ${mobile ? 'p-2.5 text-lg font-medium text-left' : 'p-1.5'
+    } rounded-md transition-colors duration-200 block md:inline-block`
 
   return (
     <>

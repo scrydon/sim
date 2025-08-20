@@ -8,7 +8,7 @@ export const GitHubBlock: BlockConfig<GitHubResponse> = {
   description: 'Interact with GitHub or trigger workflows from GitHub events',
   longDescription:
     'Access GitHub repositories, pull requests, and comments through the GitHub API. Automate code reviews, PR management, and repository interactions within your workflow. Trigger workflows from GitHub events like push, pull requests, and issues.',
-  docsLink: 'https://docs.sim.ai/tools/github',
+  docsLink: 'https://docs.scrydon.eu/tools/github',
   category: 'tools',
   bgColor: '#181C1E',
   icon: GithubIcon,

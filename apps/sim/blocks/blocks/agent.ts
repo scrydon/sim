@@ -63,7 +63,7 @@ export const AgentBlock: BlockConfig<AgentResponse> = {
   description: 'Build an agent',
   longDescription:
     'Create powerful AI agents using any LLM provider with customizable system prompts and tool integrations.',
-  docsLink: 'https://docs.sim.ai/blocks/agent',
+  docsLink: 'https://docs.scrydon.eu/blocks/agent',
   category: 'blocks',
   bgColor: 'var(--brand-primary-hover-hex)',
   icon: AgentIcon,

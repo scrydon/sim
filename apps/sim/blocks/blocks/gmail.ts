@@ -8,7 +8,7 @@ export const GmailBlock: BlockConfig<GmailToolResponse> = {
   description: 'Send Gmail or trigger workflows from Gmail events',
   longDescription:
     'Comprehensive Gmail integration with OAuth authentication. Send email messages, read email content, and trigger workflows from Gmail events like new emails and label changes.',
-  docsLink: 'https://docs.sim.ai/tools/gmail',
+  docsLink: 'https://docs.scrydon.eu/tools/gmail',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: GmailIcon,

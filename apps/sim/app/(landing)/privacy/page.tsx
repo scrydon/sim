@@ -192,7 +192,7 @@ export default function PrivacyPolicy() {
                   </li>
                   <li>
                     <span className='text-[#B5A1D4]'>Website</span> refers to Sim, accessible from
-                    sim.ai
+                    scrydon.eu
                   </li>
                   <li>
                     <span className='text-[#B5A1D4]'>You</span> means the individual accessing or
@@ -649,7 +649,7 @@ export default function PrivacyPolicy() {
                 <h3 className='mb-2 font-medium text-[#B5A1D4] text-xl'>Scope</h3>
                 <p className='mb-4'>This policy applies to the following systems and services:</p>
                 <ul className='mb-4 list-disc space-y-2 pl-6 marker:text-[#B5A1D4]'>
-                  <li>sim.ai website</li>
+                  <li>scrydon.eu website</li>
                   <li>Sim web application</li>
                   <li>Sim API services</li>
                 </ul>
@@ -660,10 +660,10 @@ export default function PrivacyPolicy() {
                   be reported directly to the solution vendor in accordance with their disclosure
                   policy (if any). Before beginning your inquiry, email us at{' '}
                   <Link
-                    href='mailto:security@sim.ai'
+                    href='mailto:security@scrydon.eu'
                     className='text-[#B5A1D4] hover:text-[var(--brand-primary-hex)]'
                   >
-                    security@sim.ai
+                    security@scrydon.eu
                   </Link>{' '}
                   if you're unsure whether a system or endpoint is in scope.
                 </p>
@@ -685,10 +685,10 @@ export default function PrivacyPolicy() {
                 <p className='mb-4'>
                   To report any security flaws, send an email to{' '}
                   <Link
-                    href='mailto:security@sim.ai'
+                    href='mailto:security@scrydon.eu'
                     className='text-[#B5A1D4] hover:text-[var(--brand-primary-hex)]'
                   >
-                    security@sim.ai
+                    security@scrydon.eu
                   </Link>
                   . The next business day, we'll acknowledge receipt of your vulnerability report
                   and keep you updated on our progress. Reports can be anonymously submitted.
@@ -725,10 +725,10 @@ export default function PrivacyPolicy() {
                 <p>
                   If you have any questions about this Privacy Policy, please contact us at:{' '}
                   <Link
-                    href='mailto:privacy@sim.ai'
+                    href='mailto:privacy@scrydon.eu'
                     className='text-[#B5A1D4] hover:text-[var(--brand-primary-hex)]'
                   >
-                    privacy@sim.ai
+                    privacy@scrydon.eu
                   </Link>
                 </p>
               </section>

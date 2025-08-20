@@ -17,7 +17,7 @@ async function main() {
       chunkSize: 1024,
       minChunkSize: 100,
       overlap: 200,
-      baseUrl: 'https://docs.sim.ai',
+      baseUrl: 'https://docs.scrydon.eu',
     })
 
     // Path to the docs content directory

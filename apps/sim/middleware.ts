@@ -32,14 +32,14 @@ export async function middleware(request: NextRequest) {
       return false
     }
 
-    // Extract root domain from BASE_DOMAIN (e.g., "sim.ai" from "staging.sim.ai")
+    // Extract root domain from BASE_DOMAIN (e.g., "scrydon.eu" from "staging.scrydon.eu")
     const baseParts = BASE_DOMAIN.split('.')
     const rootDomain = isDev
       ? 'localhost'
       : baseParts.length >= 2
         ? baseParts
             .slice(-2)
-            .join('.') // Last 2 parts: ["simstudio", "ai"] -> "sim.ai"
+            .join('.') // Last 2 parts: ["simstudio", "ai"] -> "scrydon.eu"
         : BASE_DOMAIN
 
     // Check if hostname is under the same root domain

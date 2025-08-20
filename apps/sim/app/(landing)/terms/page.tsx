@@ -278,10 +278,10 @@ export default function TermsOfService() {
                   You have the right to opt out of the provisions of this Arbitration Agreement by
                   sending a timely written notice of your decision to opt out to:{' '}
                   <Link
-                    href='mailto:legal@sim.ai'
+                    href='mailto:legal@scrydon.eu'
                     className='text-[#B5A1D4] hover:text-[var(--brand-primary-hex)]'
                   >
-                    legal@sim.ai{' '}
+                    legal@scrydon.eu{' '}
                   </Link>
                   within 30 days after first becoming subject to this Arbitration Agreement.
                 </p>
@@ -332,10 +332,10 @@ export default function TermsOfService() {
                 <p>
                   Our Copyright Agent can be reached at:{' '}
                   <Link
-                    href='mailto:copyright@sim.ai'
+                    href='mailto:copyright@scrydon.eu'
                     className='text-[#B5A1D4] hover:text-[var(--brand-primary-hex)]'
                   >
-                    copyright@sim.ai
+                    copyright@scrydon.eu
                   </Link>
                 </p>
               </section>
@@ -345,10 +345,10 @@ export default function TermsOfService() {
                 <p>
                   If you have any questions about these Terms, please contact us at:{' '}
                   <Link
-                    href='mailto:legal@sim.ai'
+                    href='mailto:legal@scrydon.eu'
                     className='text-[#B5A1D4] hover:text-[var(--brand-primary-hex)]'
                   >
-                    legal@sim.ai
+                    legal@scrydon.eu
                   </Link>
                 </p>
               </section>

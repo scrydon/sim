@@ -25,7 +25,7 @@ export function getBaseUrl(): string {
 
 /**
  * Returns just the domain and port part of the application URL
- * @returns The domain with port if applicable (e.g., 'localhost:3000' or 'sim.ai')
+ * @returns The domain with port if applicable (e.g., 'localhost:3000' or 'scrydon.eu')
  */
 export function getBaseDomain(): string {
   try {
@@ -36,20 +36,20 @@ export function getBaseDomain(): string {
     try {
       return new URL(fallbackUrl).host
     } catch {
-      return isProd ? 'sim.ai' : 'localhost:3000'
+      return isProd ? 'scrydon.eu' : 'localhost:3000'
     }
   }
 }
 
 /**
  * Returns the domain for email addresses, stripping www subdomain for Resend compatibility
- * @returns The email domain (e.g., 'sim.ai' instead of 'www.sim.ai')
+ * @returns The email domain (e.g., 'scrydon.eu' instead of 'www.scrydon.eu')
  */
 export function getEmailDomain(): string {
   try {
     const baseDomain = getBaseDomain()
     return baseDomain.startsWith('www.') ? baseDomain.substring(4) : baseDomain
   } catch (_e) {
-    return isProd ? 'sim.ai' : 'localhost:3000'
+    return isProd ? 'scrydon.eu' : 'localhost:3000'
   }
 }

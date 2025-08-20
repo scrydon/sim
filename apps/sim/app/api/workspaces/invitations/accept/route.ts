@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.redirect(
       new URL(
         '/invite/invite-error?reason=missing-token',
-        env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+        env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
       )
     )
   }
@@ -26,7 +26,7 @@ export async function GET(req: NextRequest) {
     // No need to encode API URL as callback, just redirect to invite page
     // The middleware will handle proper login flow and return to invite page
     return NextResponse.redirect(
-      new URL(`/invite/${token}?token=${token}`, env.NEXT_PUBLIC_APP_URL || 'https://sim.ai')
+      new URL(`/invite/${token}?token=${token}`, env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu')
     )
   }
 
@@ -42,7 +42,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(
         new URL(
           '/invite/invite-error?reason=invalid-token',
-          env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
         )
       )
     }
@@ -50,7 +50,10 @@ export async function GET(req: NextRequest) {
     // Check if invitation has expired
     if (new Date() > new Date(invitation.expiresAt)) {
       return NextResponse.redirect(
-        new URL('/invite/invite-error?reason=expired', env.NEXT_PUBLIC_APP_URL || 'https://sim.ai')
+        new URL(
+          '/invite/invite-error?reason=expired',
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
+        )
       )
     }
 
@@ -59,7 +62,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(
         new URL(
           '/invite/invite-error?reason=already-processed',
-          env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
         )
       )
     }
@@ -102,7 +105,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(
         new URL(
           `/invite/invite-error?reason=email-mismatch&details=${encodeURIComponent(`Invitation was sent to ${invitation.email}, but you're logged in as ${userData?.email || session.user.email}`)}`,
-          env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
         )
       )
     }
@@ -118,7 +121,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(
         new URL(
           '/invite/invite-error?reason=workspace-not-found',
-          env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
         )
       )
     }
@@ -149,7 +152,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(
         new URL(
           `/workspace/${invitation.workspaceId}/w`,
-          env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
         )
       )
     }
@@ -179,14 +182,17 @@ export async function GET(req: NextRequest) {
 
     // Redirect to the workspace
     return NextResponse.redirect(
-      new URL(`/workspace/${invitation.workspaceId}/w`, env.NEXT_PUBLIC_APP_URL || 'https://sim.ai')
+      new URL(
+        `/workspace/${invitation.workspaceId}/w`,
+        env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
+      )
     )
   } catch (error) {
     console.error('Error accepting invitation:', error)
     return NextResponse.redirect(
       new URL(
         '/invite/invite-error?reason=server-error',
-        env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+        env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
       )
     )
   }

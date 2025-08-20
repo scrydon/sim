@@ -42,7 +42,7 @@ export function generateBrandedMetadata(override: Partial<Metadata> = {}): Metad
     publisher: brand.name,
     metadataBase: env.NEXT_PUBLIC_APP_URL
       ? new URL(env.NEXT_PUBLIC_APP_URL)
-      : new URL('https://sim.ai'),
+      : new URL('https://scrydon.eu'),
     alternates: {
       canonical: '/',
       languages: {
@@ -63,7 +63,7 @@ export function generateBrandedMetadata(override: Partial<Metadata> = {}): Metad
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: env.NEXT_PUBLIC_APP_URL || 'https://sim.ai',
+      url: env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu',
       title: defaultTitle,
       description: defaultDescription,
       siteName: brand.name,
@@ -130,10 +130,10 @@ export function generateStructuredData() {
   return {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Sim',
+    name: 'Scrydon',
     description:
       'Build and deploy AI agents using our Figma-like canvas. Build, write evals, and deploy AI agent workflows that automate workflows and streamline your business processes.',
-    url: 'https://sim.ai',
+    url: 'https://scrydon.eu',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web Browser',
     offers: {
@@ -142,8 +142,8 @@ export function generateStructuredData() {
     },
     creator: {
       '@type': 'Organization',
-      name: 'Sim',
-      url: 'https://sim.ai',
+      name: 'Scrydon',
+      url: 'https://scrydon.eu',
     },
     featureList: [
       'Visual AI Agent Builder',

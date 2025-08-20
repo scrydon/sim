@@ -462,13 +462,13 @@ export async function POST(req: NextRequest) {
       }
 
       const errorText = await simAgentResponse.text().catch(() => '')
-      logger.error(`[${tracker.requestId}] Sim agent API error:`, {
+      logger.error(`[${tracker.requestId}] Scrydon agent API error:`, {
         status: simAgentResponse.status,
         error: errorText,
       })
 
       return NextResponse.json(
-        { error: `Sim agent API error: ${simAgentResponse.statusText}` },
+        { error: `Scrydon agent API error: ${simAgentResponse.statusText}` },
         { status: simAgentResponse.status }
       )
     }

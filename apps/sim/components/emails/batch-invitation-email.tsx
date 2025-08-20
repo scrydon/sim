@@ -72,7 +72,7 @@ export const BatchInvitationEmail = ({
         <Container style={container}>
           <Section style={logoContainer}>
             <Img
-              src={brand.logoUrl || 'https://sim.ai/logo.png'}
+              src={brand.logoUrl || 'https://scrydon.eu/logo.png'}
               width='120'
               height='36'
               alt={brand.name}

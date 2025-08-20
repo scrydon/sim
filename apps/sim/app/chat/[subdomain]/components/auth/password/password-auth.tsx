@@ -75,14 +75,14 @@ export default function PasswordAuth({
   }
 
   return (
-    <Dialog open={true} onOpenChange={() => {}}>
+    <Dialog open={true} onOpenChange={() => { }}>
       <DialogContent
         className='flex flex-col gap-0 overflow-hidden p-0 sm:max-w-[450px]'
         hideCloseButton
       >
         <DialogHeader className='border-b px-6 py-4'>
           <div className='flex items-center justify-center'>
-            <a href='https://sim.ai' target='_blank' rel='noopener noreferrer' className='mb-2'>
+            <a href='https://scrydon.eu' target='_blank' rel='noopener noreferrer' className='mb-2'>
               <svg
                 width='40'
                 height='40'

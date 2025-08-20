@@ -64,7 +64,7 @@ export function NoOrganizationView({
                 </label>
                 <div className='flex items-center space-x-2'>
                   <div className='rounded-l-[8px] bg-muted px-3 py-2 text-muted-foreground text-xs'>
-                    sim.ai/team/
+                    scrydon.eu/team/
                   </div>
                   <Input
                     id='orgSlug'

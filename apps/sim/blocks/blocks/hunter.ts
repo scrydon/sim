@@ -8,7 +8,7 @@ export const HunterBlock: BlockConfig<HunterResponse> = {
   description: 'Find and verify professional email addresses',
   longDescription:
     "Search for email addresses, verify their deliverability, discover companies, and enrich contact data using Hunter.io's powerful email finding capabilities.",
-  docsLink: 'https://docs.sim.ai/tools/hunter',
+  docsLink: 'https://docs.scrydon.eu/tools/hunter',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: HunterIOIcon,

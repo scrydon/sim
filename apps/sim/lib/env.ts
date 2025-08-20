@@ -167,7 +167,7 @@ export const env = createEnv({
 
   client: {
     // Core Application URLs - Required for frontend functionality
-    NEXT_PUBLIC_APP_URL: z.string().url(),                       // Base URL of the application (e.g., https://app.sim.ai)
+    NEXT_PUBLIC_APP_URL: z.string().url(),                       // Base URL of the application (e.g., https://app.scrydon.eu)
     NEXT_PUBLIC_VERCEL_URL: z.string().optional(),                  // Vercel deployment URL for preview/production
 
     // Client-side Services

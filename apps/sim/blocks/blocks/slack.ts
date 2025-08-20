@@ -8,7 +8,7 @@ export const SlackBlock: BlockConfig<SlackResponse> = {
   description: 'Send messages to Slack or trigger workflows from Slack events',
   longDescription:
     "Comprehensive Slack integration with OAuth authentication. Send formatted messages using Slack's mrkdwn syntax or trigger workflows from Slack events like mentions and messages.",
-  docsLink: 'https://docs.sim.ai/tools/slack',
+  docsLink: 'https://docs.scrydon.eu/tools/slack',
   category: 'tools',
   bgColor: '#611f69',
   icon: SlackIcon,

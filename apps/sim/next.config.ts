@@ -205,13 +205,13 @@ const nextConfig: NextConfig = {
       redirects.push(
         {
           source: '/((?!api|_next|_vercel|favicon|static|.*\\..*).*)',
-          destination: 'https://www.sim.ai/$1',
+          destination: 'https://www.scrydon.eu/$1',
           permanent: true,
           has: [{ type: 'host' as const, value: 'simstudio.ai' }],
         },
         {
           source: '/((?!api|_next|_vercel|favicon|static|.*\\..*).*)',
-          destination: 'https://www.sim.ai/$1',
+          destination: 'https://www.scrydon.eu/$1',
           permanent: true,
           has: [{ type: 'host' as const, value: 'www.simstudio.ai' }],
         }

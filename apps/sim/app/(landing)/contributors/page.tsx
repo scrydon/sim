@@ -207,13 +207,13 @@ export default function ContributorsPage() {
                     <div className='relative h-6 w-6 sm:h-8 sm:w-8'>
                       <Image
                         src='/favicon.ico'
-                        alt='Sim Logo'
+                        alt='Scrydon Logo'
                         className='object-contain'
                         width={32}
                         height={32}
                       />
                     </div>
-                    <h2 className='font-semibold text-lg text-white sm:text-xl'>Sim</h2>
+                    <h2 className='font-semibold text-lg text-white sm:text-xl'>Scrydon</h2>
                   </div>
                   <p className='text-neutral-400 text-xs sm:text-sm'>
                     An open source platform for building, testing, and optimizing agentic workflows

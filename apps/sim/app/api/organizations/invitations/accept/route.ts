@@ -17,7 +17,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.redirect(
       new URL(
         '/invite/invite-error?reason=missing-invitation-id',
-        env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+        env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
       )
     )
   }
@@ -29,7 +29,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.redirect(
       new URL(
         `/invite/organization?id=${invitationId}`,
-        env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+        env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
       )
     )
   }
@@ -46,7 +46,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(
         new URL(
           '/invite/invite-error?reason=invalid-invitation',
-          env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
         )
       )
     }
@@ -56,7 +56,10 @@ export async function GET(req: NextRequest) {
     // Check if invitation has expired
     if (orgInvitation.expiresAt && new Date() > orgInvitation.expiresAt) {
       return NextResponse.redirect(
-        new URL('/invite/invite-error?reason=expired', env.NEXT_PUBLIC_APP_URL || 'https://sim.ai')
+        new URL(
+          '/invite/invite-error?reason=expired',
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
+        )
       )
     }
 
@@ -65,7 +68,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(
         new URL(
           '/invite/invite-error?reason=already-processed',
-          env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
         )
       )
     }
@@ -75,7 +78,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(
         new URL(
           '/invite/invite-error?reason=email-mismatch',
-          env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
         )
       )
     }
@@ -96,7 +99,7 @@ export async function GET(req: NextRequest) {
       return NextResponse.redirect(
         new URL(
           '/invite/invite-error?reason=already-member',
-          env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+          env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
         )
       )
     }
@@ -181,7 +184,7 @@ export async function GET(req: NextRequest) {
 
     // Redirect to success page or main app
     return NextResponse.redirect(
-      new URL('/workspaces?invite=accepted', env.NEXT_PUBLIC_APP_URL || 'https://sim.ai')
+      new URL('/workspaces?invite=accepted', env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu')
     )
   } catch (error) {
     logger.error('Failed to accept organization invitation', {
@@ -193,7 +196,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.redirect(
       new URL(
         '/invite/invite-error?reason=server-error',
-        env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+        env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
       )
     )
   }

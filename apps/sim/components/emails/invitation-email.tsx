@@ -26,7 +26,7 @@ interface InvitationEmailProps {
   updatedDate?: Date
 }
 
-const baseUrl = env.NEXT_PUBLIC_APP_URL || 'https://sim.ai'
+const baseUrl = env.NEXT_PUBLIC_APP_URL || 'https://scrydon.eu'
 
 export const InvitationEmail = ({
   inviterName = 'A team member',
@@ -57,7 +57,7 @@ export const InvitationEmail = ({
     <Html>
       <Head />
       <Body style={baseStyles.main}>
-        <Preview>You've been invited to join {organizationName} on Sim</Preview>
+        <Preview>You've been invited to join {organizationName} on Scrydon</Preview>
         <Container style={baseStyles.container}>
           <Section style={{ padding: '30px 0', textAlign: 'center' }}>
             <Row>

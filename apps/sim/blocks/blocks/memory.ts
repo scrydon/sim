@@ -10,7 +10,7 @@ export const MemoryBlock: BlockConfig = {
   bgColor: '#F64F9E',
   icon: BrainIcon,
   category: 'blocks',
-  docsLink: 'https://docs.sim.ai/tools/memory',
+  docsLink: 'https://docs.scrydon.eu/tools/memory',
   subBlocks: [
     {
       id: 'operation',

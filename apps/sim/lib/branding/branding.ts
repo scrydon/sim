@@ -15,11 +15,11 @@ export interface BrandConfig {
  * Default brand configuration values
  */
 const defaultConfig: BrandConfig = {
-  name: 'Sim',
+  name: 'Scrydon',
   logoUrl: undefined,
   faviconUrl: '/favicon/favicon.ico',
   customCssUrl: undefined,
-  supportEmail: 'help@sim.ai',
+  supportEmail: 'help@scrydon.eu',
   documentationUrl: undefined,
   termsUrl: undefined,
   privacyUrl: undefined,

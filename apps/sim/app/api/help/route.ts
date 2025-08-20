@@ -105,7 +105,7 @@ ${message}
 
     // Send email using Resend
     const { error } = await resend.emails.send({
-      from: `Sim <noreply@${env.EMAIL_DOMAIN || getEmailDomain()}>`,
+      from: `Scrydon <noreply@${env.EMAIL_DOMAIN || getEmailDomain()}>`,
       to: [`help@${env.EMAIL_DOMAIN || getEmailDomain()}`],
       subject: `[${type.toUpperCase()}] ${subject}`,
       replyTo: email,
@@ -128,7 +128,7 @@ ${message}
     // Send confirmation email to the user
     await resend.emails
       .send({
-        from: `Sim <noreply@${env.EMAIL_DOMAIN || getEmailDomain()}>`,
+        from: `Scrydon <noreply@${env.EMAIL_DOMAIN || getEmailDomain()}>`,
         to: [email],
         subject: `Your ${type} request has been received: ${subject}`,
         text: `
@@ -142,7 +142,7 @@ ${message}
 ${images.length > 0 ? `You attached ${images.length} image(s).` : ''}
 
 Best regards,
-The Sim Team
+The Scrydon Team
         `,
         replyTo: `help@${env.EMAIL_DOMAIN || getEmailDomain()}`,
       })

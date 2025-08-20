@@ -10,7 +10,7 @@ export const KnowledgeBlock: BlockConfig = {
   bgColor: '#00B0B0',
   icon: PackageSearchIcon,
   category: 'blocks',
-  docsLink: 'https://docs.sim.ai/blocks/knowledge',
+  docsLink: 'https://docs.scrydon.eu/blocks/knowledge',
   subBlocks: [
     {
       id: 'operation',

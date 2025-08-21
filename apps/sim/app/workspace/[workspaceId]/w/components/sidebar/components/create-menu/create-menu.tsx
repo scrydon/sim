@@ -16,7 +16,6 @@ import { parseWorkflowYaml } from '@/stores/workflows/yaml/importer'
 
 const logger = createLogger('CreateMenu')
 
-// Constants
 const TIMERS = {
   LONG_PRESS_DELAY: 500,
   CLOSE_DELAY: 150,

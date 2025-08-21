@@ -6,6 +6,7 @@ import { getMainCSPPolicy, getWorkflowExecutionCSPPolicy } from './lib/security/
 
 const nextConfig: NextConfig = {
   devIndicators: false,
+  productionBrowserSourceMaps: false,
   images: {
     remotePatterns: [
       {
@@ -30,6 +31,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: '*.s3.*.amazonaws.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
       // Custom domain for file storage if configured
       ...(env.NEXT_PUBLIC_BLOB_BASE_URL
         ? [
@@ -53,7 +58,6 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizeCss: true,
-    turbopackSourceMaps: false,
   },
   ...(isDev && {
     allowedDevOrigins: [

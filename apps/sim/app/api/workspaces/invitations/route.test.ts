@@ -91,6 +91,7 @@ describe('Workspace Invitations API Route', () => {
       env: {
         RESEND_API_KEY: 'test-resend-key',
         NEXT_PUBLIC_APP_URL: 'https://test.scrydon.eu',
+        FROM_EMAIL_ADDRESS: 'Scrydon <noreply@test.scrydon.ai>',
         EMAIL_DOMAIN: 'test.scrydon.eu',
       },
     }))

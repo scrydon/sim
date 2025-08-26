@@ -404,12 +404,9 @@ export class AgentBlockHandler implements BlockHandler {
       stream: streaming,
       messages,
       environmentVariables: context.environmentVariables || {},
-<<<<<<< HEAD
-=======
       workflowVariables: context.workflowVariables || {},
       blockData,
       blockNameMapping,
->>>>>>> upstream/main
       reasoningEffort: inputs.reasoningEffort,
       verbosity: inputs.verbosity,
     }

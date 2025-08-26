@@ -62,43 +62,6 @@ export const microsoftTeamsWebhookTrigger: TriggerConfig = {
       teamsTeamId: { type: 'string', description: 'Teams team ID' },
       teamsChannelId: { type: 'string', description: 'Teams channel ID' },
     },
-<<<<<<< HEAD
-    input: {
-      type: 'string',
-      description: 'Input message',
-    },
-    timestamp: {
-      type: 'string',
-      description: 'Message timestamp',
-    },
-    localTimestamp: {
-      type: 'string',
-      description: 'Local timestamp of the message',
-    },
-    serviceUrl: {
-      type: 'string',
-      description: 'Microsoft Teams service URL',
-    },
-    channelId: {
-      type: 'string',
-      description: 'Teams channel ID where the event occurred',
-    },
-    from_id: {
-      type: 'string',
-      description: 'User ID who sent the message',
-    },
-    from_name: {
-      type: 'string',
-      description: 'Username who sent the message',
-    },
-    conversation_id: {
-      type: 'string',
-      description: 'Conversation/thread ID',
-    },
-    text: {
-      type: 'string',
-      description: 'Message text content',
-=======
     conversation: {
       id: { type: 'string', description: 'Composite conversation ID' },
       name: { type: 'string', description: 'Conversation name (nullable)' },
@@ -107,7 +70,6 @@ export const microsoftTeamsWebhookTrigger: TriggerConfig = {
       tenantId: { type: 'string', description: 'Tenant ID' },
       aadObjectId: { type: 'string', description: 'AAD Object ID (nullable)' },
       conversationType: { type: 'string', description: 'Conversation type (channel)' },
->>>>>>> upstream/main
     },
     deliveryMode: { type: 'string', description: 'Delivery mode (nullable)' },
     membersAdded: { type: 'array', description: 'Members added (nullable)' },

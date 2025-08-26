@@ -36,13 +36,8 @@ vi.mock('@/lib/env', () => ({
     RESEND_API_KEY: 'test-api-key',
     AZURE_ACS_CONNECTION_STRING: 'test-azure-connection-string',
     AZURE_COMMUNICATION_EMAIL_DOMAIN: 'test.azurecomm.net',
-<<<<<<< HEAD
-    NEXT_PUBLIC_APP_URL: 'https://test.scrydon.eu',
-    FROM_EMAIL_ADDRESS: 'Scrydon <noreply@scrydon.com>',
-=======
     NEXT_PUBLIC_APP_URL: 'https://test.sim.ai',
     FROM_EMAIL_ADDRESS: 'Sim <noreply@sim.ai>',
->>>>>>> upstream/main
   },
 }))
 

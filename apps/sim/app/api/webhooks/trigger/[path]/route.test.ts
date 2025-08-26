@@ -325,15 +325,7 @@ describe('Webhook Trigger API Route', () => {
       const req = createMockRequest('POST', { event: 'test', id: 'test-123' })
       const params = Promise.resolve({ path: 'test-path' })
 
-<<<<<<< HEAD
-      vi.doMock('@trigger.dev/sdk', () => ({
-        tasks: {
-          trigger: vi.fn().mockResolvedValue({ id: 'mock-task-id' }),
-        },
-      }))
-=======
       mockTriggerDevSdk()
->>>>>>> upstream/main
 
       const { POST } = await import('@/app/api/webhooks/trigger/[path]/route')
       const response = await POST(req, { params })
@@ -359,15 +351,7 @@ describe('Webhook Trigger API Route', () => {
       const req = createMockRequest('POST', { event: 'bearer.test' }, headers)
       const params = Promise.resolve({ path: 'test-path' })
 
-<<<<<<< HEAD
-      vi.doMock('@trigger.dev/sdk', () => ({
-        tasks: {
-          trigger: vi.fn().mockResolvedValue({ id: 'mock-task-id' }),
-        },
-      }))
-=======
       mockTriggerDevSdk()
->>>>>>> upstream/main
 
       const { POST } = await import('@/app/api/webhooks/trigger/[path]/route')
       const response = await POST(req, { params })
@@ -393,15 +377,7 @@ describe('Webhook Trigger API Route', () => {
       const req = createMockRequest('POST', { event: 'custom.header.test' }, headers)
       const params = Promise.resolve({ path: 'test-path' })
 
-<<<<<<< HEAD
-      vi.doMock('@trigger.dev/sdk', () => ({
-        tasks: {
-          trigger: vi.fn().mockResolvedValue({ id: 'mock-task-id' }),
-        },
-      }))
-=======
       mockTriggerDevSdk()
->>>>>>> upstream/main
 
       const { POST } = await import('@/app/api/webhooks/trigger/[path]/route')
       const response = await POST(req, { params })

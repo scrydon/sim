@@ -90,15 +90,9 @@ describe('Workspace Invitations API Route', () => {
     vi.doMock('@/lib/env', () => ({
       env: {
         RESEND_API_KEY: 'test-resend-key',
-<<<<<<< HEAD
-        NEXT_PUBLIC_APP_URL: 'https://test.scrydon.eu',
-        FROM_EMAIL_ADDRESS: 'Scrydon <noreply@test.scrydon.ai>',
-        EMAIL_DOMAIN: 'test.scrydon.eu',
-=======
         NEXT_PUBLIC_APP_URL: 'https://test.sim.ai',
         FROM_EMAIL_ADDRESS: 'Sim <noreply@test.sim.ai>',
         EMAIL_DOMAIN: 'test.sim.ai',
->>>>>>> upstream/main
       },
     }))
 

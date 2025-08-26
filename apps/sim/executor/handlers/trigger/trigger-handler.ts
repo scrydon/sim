@@ -63,8 +63,6 @@ export class TriggerBlockHandler implements BlockHandler {
             }
           }
 
-<<<<<<< HEAD
-=======
           if (provider === 'microsoftteams') {
             const providerData = (starterOutput as any)[provider] || webhookData[provider] || {}
             // Expose the raw Teams message payload at the root for easy indexing
@@ -77,7 +75,6 @@ export class TriggerBlockHandler implements BlockHandler {
             }
           }
 
->>>>>>> upstream/main
           // Provider-specific early return for Airtable: preserve raw shape entirely
           if (provider === 'airtable') {
             return starterOutput

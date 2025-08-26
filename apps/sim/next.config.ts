@@ -1,4 +1,3 @@
-import path from 'path'
 import type { NextConfig } from 'next'
 import { env, isTruthy } from './lib/env'
 import { isDev, isHosted } from './lib/environment'
@@ -73,7 +72,6 @@ const nextConfig: NextConfig = {
       'localhost:3000',
       'localhost:3001',
     ],
-    outputFileTracingRoot: path.join(__dirname, '../../'),
   }),
   transpilePackages: [
     'prettier',

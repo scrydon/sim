@@ -22,12 +22,13 @@ export function ChatHeader({ chatConfig, starCount }: ChatHeaderProps) {
   return (
     <div className='flex items-center justify-between bg-background/95 px-6 py-4 pt-6 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:px-8 md:pt-4'>
       <div className='flex items-center gap-4'>
-        {customImage ? (
+        {customImage && (
           <img
             src={customImage}
             alt={`${chatConfig?.title || 'Chat'} logo`}
-            className='h-12 w-12 rounded-md object-cover'
+            className='h-8 w-8 rounded-md object-cover'
           />
+<<<<<<< HEAD
         ) : (
           // Default Scrydon logo when no custom image is provided
           <div
@@ -67,8 +68,10 @@ export function ChatHeader({ chatConfig, starCount }: ChatHeaderProps) {
               <circle cx='25' cy='11' r='2' fill={primaryColor} />
             </svg>
           </div>
+=======
+>>>>>>> upstream/main
         )}
-        <h2 className='font-medium text-lg'>
+        <h2 className='font-medium text-foreground text-lg'>
           {chatConfig?.customizations?.headerText || chatConfig?.title || 'Chat'}
         </h2>
       </div>

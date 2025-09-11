@@ -54,3 +54,5 @@ export function InviteLayout({ children }: InviteLayoutProps) {
     </main>
   )
 }
+
+export default InviteLayout

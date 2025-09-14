@@ -6,8 +6,9 @@ export const ElevenLabsBlock: BlockConfig<ElevenLabsBlockResponse> = {
   type: 'elevenlabs',
   name: 'ElevenLabs',
   description: 'Convert TTS using ElevenLabs',
-  longDescription: 'Generate realistic speech from text using ElevenLabs voices.',
-  docsLink: 'https://docs.scrydon.eu/tools/elevenlabs',
+  longDescription:
+    'Integrate ElevenLabs into the workflow. Can convert text to speech. Requires API key.',
+  docsLink: 'https://docs.scrydon.com/tools/elevenlabs',
   category: 'tools',
   bgColor: '#181C1E',
   icon: ElevenLabsIcon,

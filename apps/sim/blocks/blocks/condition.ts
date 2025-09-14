@@ -20,8 +20,8 @@ export const ConditionBlock: BlockConfig<ConditionBlockOutput> = {
   name: 'Condition',
   description: 'Add a condition',
   longDescription:
-    'Add a condition to the workflow to branch the execution path based on a boolean expression.',
-  docsLink: 'https://docs.scrydon.eu/blocks/condition',
+    'This is a core workflow block. Add a condition to the workflow to branch the execution path based on a boolean expression.',
+  docsLink: 'https://docs.scrydon.com/blocks/condition',
   bgColor: '#FF752F',
   icon: ConditionalIcon,
   category: 'blocks',

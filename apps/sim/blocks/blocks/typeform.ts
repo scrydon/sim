@@ -7,8 +7,8 @@ export const TypeformBlock: BlockConfig<TypeformResponse> = {
   name: 'Typeform',
   description: 'Interact with Typeform',
   longDescription:
-    'Access and retrieve responses from your Typeform forms. Integrate form submissions data into your workflow for analysis, storage, or processing.',
-  docsLink: 'https://docs.scrydon.eu/tools/typeform',
+    'Integrate Typeform into the workflow. Can retrieve responses, download files, and get form insights. Requires API Key.',
+  docsLink: 'https://docs.scrydon.com/tools/typeform',
   category: 'tools',
   bgColor: '#262627', // Typeform brand color
   icon: TypeformIcon,

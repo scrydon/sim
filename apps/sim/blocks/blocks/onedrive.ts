@@ -7,8 +7,8 @@ export const OneDriveBlock: BlockConfig<OneDriveResponse> = {
   name: 'OneDrive',
   description: 'Create, upload, and list files',
   longDescription:
-    'Integrate OneDrive functionality to manage files and folders. Upload new files, create new folders, and list contents of folders using OAuth authentication. Supports file operations with custom MIME types and folder organization.',
-  docsLink: 'https://docs.scrydon.eu/tools/onedrive',
+    'Integrate OneDrive into the workflow. Can create, upload, and list files. Requires OAuth.',
+  docsLink: 'https://docs.scrydon.com/tools/onedrive',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: MicrosoftOneDriveIcon,

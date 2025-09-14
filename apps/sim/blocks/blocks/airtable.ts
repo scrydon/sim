@@ -7,10 +7,8 @@ export const AirtableBlock: BlockConfig<AirtableResponse> = {
   name: 'Airtable',
   description: 'Read, create, and update Airtable',
   longDescription:
-    'Integrate Airtable functionality to manage table records. List, get, create, ' +
-    'update single, or update multiple records using OAuth authentication. ' +
-    'Requires base ID, table ID, and operation-specific parameters.',
-  docsLink: 'https://docs.scrydon.eu/tools/airtable',
+    'Integrates Airtable into the workflow. Can create, get, list, or update Airtable records. Requires OAuth. Can be used in trigger mode to trigger a workflow when an update is made to an Airtable table.',
+  docsLink: 'https://docs.scrydon.com/tools/airtable',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: AirtableIcon,

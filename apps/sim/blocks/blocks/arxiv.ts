@@ -7,8 +7,8 @@ export const ArxivBlock: BlockConfig<ArxivResponse> = {
   name: 'ArXiv',
   description: 'Search and retrieve academic papers from ArXiv',
   longDescription:
-    'Search for academic papers, retrieve metadata, download papers, and access the vast collection of scientific research on ArXiv.',
-  docsLink: 'https://docs.scrydon.eu/tools/arxiv',
+    'Integrates ArXiv into the workflow. Can search for papers, get paper details, and get author papers. Does not require OAuth or an API key.',
+  docsLink: 'https://docs.scrydon.com/tools/arxiv',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: ArxivIcon,

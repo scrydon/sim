@@ -7,8 +7,8 @@ export const MicrosoftTeamsBlock: BlockConfig<MicrosoftTeamsResponse> = {
   name: 'Microsoft Teams',
   description: 'Read, write, and create messages',
   longDescription:
-    'Integrate Microsoft Teams functionality to manage messages. Read content from existing messages and write to messages using OAuth authentication. Supports text content manipulation for message creation and editing.',
-  docsLink: 'https://docs.scrydon.eu/tools/microsoft_teams',
+    'Integrate Microsoft Teams into the workflow. Can read and write chat messages, and read and write channel messages. Requires OAuth. Can be used in trigger mode to trigger a workflow when a message is sent to a chat or channel.',
+  docsLink: 'https://docs.scrydon.com/tools/microsoft_teams',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: MicrosoftTeamsIcon,

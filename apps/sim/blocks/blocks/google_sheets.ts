@@ -7,8 +7,8 @@ export const GoogleSheetsBlock: BlockConfig<GoogleSheetsResponse> = {
   name: 'Google Sheets',
   description: 'Read, write, and update data',
   longDescription:
-    'Integrate Google Sheets functionality to manage spreadsheet data. Read data from specific ranges, write new data, update existing cells, and append data to the end of sheets using OAuth authentication. Supports various input and output formats for flexible data handling.',
-  docsLink: 'https://docs.scrydon.eu/tools/google_sheets',
+    'Integrate Google Sheets into the workflow. Can read, write, append, and update data. Requires OAuth.',
+  docsLink: 'https://docs.scrydon.com/tools/google_sheets',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: GoogleSheetsIcon,

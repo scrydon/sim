@@ -7,8 +7,8 @@ export const WikipediaBlock: BlockConfig<WikipediaResponse> = {
   name: 'Wikipedia',
   description: 'Search and retrieve content from Wikipedia',
   longDescription:
-    "Access Wikipedia articles, search for pages, get summaries, retrieve full content, and discover random articles from the world's largest encyclopedia.",
-  docsLink: 'https://docs.scrydon.eu/tools/wikipedia',
+    'Integrate Wikipedia into the workflow. Can get page summary, search pages, get page content, and get random page.',
+  docsLink: 'https://docs.scrydon.com/tools/wikipedia',
   category: 'tools',
   bgColor: '#000000',
   icon: WikipediaIcon,

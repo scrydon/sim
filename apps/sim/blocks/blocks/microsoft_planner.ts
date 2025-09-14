@@ -20,8 +20,8 @@ export const MicrosoftPlannerBlock: BlockConfig<MicrosoftPlannerResponse> = {
   name: 'Microsoft Planner',
   description: 'Read and create tasks in Microsoft Planner',
   longDescription:
-    'Integrate Microsoft Planner functionality to manage tasks. Read all user tasks, tasks from specific plans, individual tasks, or create new tasks with various properties like title, description, due date, and assignees using OAuth authentication.',
-  docsLink: 'https://docs.scrydon.eu/tools/microsoft_planner',
+    'Integrate Microsoft Planner into the workflow. Can read and create tasks. Requires OAuth.',
+  docsLink: 'https://docs.scrydon.com/tools/microsoft_planner',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: MicrosoftPlannerIcon,

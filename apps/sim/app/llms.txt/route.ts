@@ -7,7 +7,7 @@ Sim is a platform to build, prototype, and deploy AI agent workflows. It's the f
 
 ## Key Features
 - Visual Workflow Builder: Drag-and-drop interface for creating AI agent workflows
-- [Documentation](https://docs.sim.ai): Complete guide to building AI agents
+- [Documentation](https://docs.scrydon.com): Complete guide to building AI agents
 
 ## Use Cases
 - AI Agent Workflow Automation
@@ -25,7 +25,7 @@ Sim is a platform to build, prototype, and deploy AI agent workflows. It's the f
 - Legal Agent Workflows
 
 ## Getting Started
-- [Quick Start Guide](https://docs.sim.ai/quickstart)
+- [Quick Start Guide](https://docs.scrydon.com/quickstart)
 - [GitHub](https://github.com/simstudioai/sim)
 
 ## Resources

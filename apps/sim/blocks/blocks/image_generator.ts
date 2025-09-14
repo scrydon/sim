@@ -7,8 +7,8 @@ export const ImageGeneratorBlock: BlockConfig<DalleResponse> = {
   name: 'Image Generator',
   description: 'Generate images',
   longDescription:
-    "Create high-quality images using OpenAI's image generation models. Configure resolution, quality, style, and other parameters to get exactly the image you need.",
-  docsLink: 'https://docs.scrydon.eu/tools/image_generator',
+    'Integrate Image Generator into the workflow. Can generate images using DALL-E 3 or GPT Image. Requires API Key.',
+  docsLink: 'https://docs.scrydon.com/tools/image_generator',
   category: 'tools',
   bgColor: '#4D5FFF',
   icon: ImageIcon,

@@ -690,6 +690,6 @@ kubectl logs job/<release>-migrations
 
 ## Support
 
-- Documentation: https://docs.sim.ai
+- Documentation: https://docs.scrydon.com
 - GitHub Issues: https://github.com/simstudioai/sim/issues
 - Discord: https://discord.gg/Hr4UWYEcTT

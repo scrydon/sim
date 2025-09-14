@@ -7,8 +7,8 @@ export const VisionBlock: BlockConfig<VisionResponse> = {
   name: 'Vision',
   description: 'Analyze images with vision models',
   longDescription:
-    'Process visual content with customizable prompts to extract insights and information from images.',
-  docsLink: 'https://docs.scrydon.eu/tools/vision',
+    'Integrate Vision into the workflow. Can analyze images with vision models. Requires API Key.',
+  docsLink: 'https://docs.scrydon.com/tools/vision',
   category: 'tools',
   bgColor: '#4D5FFF',
   icon: EyeIcon,

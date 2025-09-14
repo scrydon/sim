@@ -6,9 +6,8 @@ export const WhatsAppBlock: BlockConfig<WhatsAppResponse> = {
   type: 'whatsapp',
   name: 'WhatsApp',
   description: 'Send WhatsApp messages',
-  longDescription:
-    'Send messages to WhatsApp users using the WhatsApp Business API. Requires WhatsApp Business API configuration.',
-  docsLink: 'https://docs.scrydon.eu/tools/whatsapp',
+  longDescription: 'Integrate WhatsApp into the workflow. Can send messages.',
+  docsLink: 'https://docs.scrydon.com/tools/whatsapp',
   category: 'tools',
   bgColor: '#25D366',
   icon: WhatsAppIcon,

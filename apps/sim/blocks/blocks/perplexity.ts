@@ -7,8 +7,8 @@ export const PerplexityBlock: BlockConfig<PerplexityChatResponse> = {
   name: 'Perplexity',
   description: 'Use Perplexity AI chat models',
   longDescription:
-    'Generate completions using Perplexity AI models with real-time knowledge and search capabilities. Create responses, answer questions, and generate content with customizable parameters.',
-  docsLink: 'https://docs.scrydon.eu/tools/perplexity',
+    'Integrate Perplexity into the workflow. Can generate completions using Perplexity AI chat models. Requires API Key.',
+  docsLink: 'https://docs.scrydon.com/tools/perplexity',
   category: 'tools',
   bgColor: '#20808D', // Perplexity turquoise color
   icon: PerplexityIcon,

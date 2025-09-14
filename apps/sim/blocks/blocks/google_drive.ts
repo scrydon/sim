@@ -7,8 +7,8 @@ export const GoogleDriveBlock: BlockConfig<GoogleDriveResponse> = {
   name: 'Google Drive',
   description: 'Create, upload, and list files',
   longDescription:
-    'Integrate Google Drive functionality to manage files and folders. Upload new files, get content from existing files, create new folders, and list contents of folders using OAuth authentication. Supports file operations with custom MIME types and folder organization.',
-  docsLink: 'https://docs.scrydon.eu/tools/google_drive',
+    'Integrate Google Drive into the workflow. Can create, upload, and list files. Requires OAuth.',
+  docsLink: 'https://docs.scrydon.com/tools/google_drive',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: GoogleDriveIcon,

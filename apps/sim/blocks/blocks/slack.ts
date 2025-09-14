@@ -7,8 +7,8 @@ export const SlackBlock: BlockConfig<SlackResponse> = {
   name: 'Slack',
   description: 'Send messages to Slack or trigger workflows from Slack events',
   longDescription:
-    "Comprehensive Slack integration with OAuth authentication. Send formatted messages using Slack's mrkdwn syntax or trigger workflows from Slack events like mentions and messages.",
-  docsLink: 'https://docs.scrydon.eu/tools/slack',
+    'Integrate Slack into the workflow. Can send messages, create canvases, and read messages. Requires OAuth. Can be used in trigger mode to trigger a workflow when a message is sent to a channel.',
+  docsLink: 'https://docs.scrydon.com/tools/slack',
   category: 'tools',
   bgColor: '#611f69',
   icon: SlackIcon,

@@ -7,8 +7,8 @@ export const RedditBlock: BlockConfig<RedditResponse> = {
   name: 'Reddit',
   description: 'Access Reddit data and content',
   longDescription:
-    'Access Reddit data to retrieve posts and comments from any subreddit. Get post titles, content, authors, scores, comments and more.',
-  docsLink: 'https://docs.scrydon.eu/tools/reddit',
+    'Integrate Reddit into the workflow. Can get posts and comments from a subreddit. Requires OAuth.',
+  docsLink: 'https://docs.scrydon.com/tools/reddit',
   category: 'tools',
   bgColor: '#FF5700',
   icon: RedditIcon,

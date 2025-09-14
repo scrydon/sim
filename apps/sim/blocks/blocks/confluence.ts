@@ -7,8 +7,8 @@ export const ConfluenceBlock: BlockConfig<ConfluenceResponse> = {
   name: 'Confluence',
   description: 'Interact with Confluence',
   longDescription:
-    'Connect to Confluence workspaces to retrieve and search documentation. Access page content, metadata, and integrate Confluence documentation into your workflows.',
-  docsLink: 'https://docs.scrydon.eu/tools/confluence',
+    'Integrate Confluence into the workflow. Can read and update a page. Requires OAuth.',
+  docsLink: 'https://docs.scrydon.com/tools/confluence',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: ConfluenceIcon,

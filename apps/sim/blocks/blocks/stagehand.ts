@@ -13,8 +13,8 @@ export const StagehandBlock: BlockConfig<StagehandExtractResponse> = {
   name: 'Stagehand Extract',
   description: 'Extract data from websites',
   longDescription:
-    'Use Stagehand to extract structured data from webpages using Browserbase and OpenAI.',
-  docsLink: 'https://docs.scrydon.eu/tools/stagehand',
+    'Integrate Stagehand into the workflow. Can extract structured data from webpages. Requires API Key.',
+  docsLink: 'https://docs.scrydon.com/tools/stagehand',
   category: 'tools',
   bgColor: '#FFC83C',
   icon: StagehandIcon,

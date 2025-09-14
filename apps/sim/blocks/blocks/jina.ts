@@ -7,8 +7,8 @@ export const JinaBlock: BlockConfig<ReadUrlResponse> = {
   name: 'Jina',
   description: 'Convert website content into text',
   longDescription:
-    "Transform web content into clean, readable text using Jina AI's advanced extraction capabilities. Extract meaningful content from websites while preserving important information and optionally gathering links.",
-  docsLink: 'https://docs.scrydon.eu/tools/jina',
+    'Integrate Jina into the workflow. Extracts content from websites. Requires API Key.',
+  docsLink: 'https://docs.scrydon.com/tools/jina',
   category: 'tools',
   bgColor: '#333333',
   icon: JinaAIIcon,

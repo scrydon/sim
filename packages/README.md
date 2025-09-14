@@ -243,7 +243,7 @@ Both SDKs are licensed under the Apache-2.0 License. See the [LICENSE](../LICENS
 
 ## Support
 
-- 📖 [Documentation](https://docs.sim.ai)
+- 📖 [Documentation](https://docs.scrydon.com)
 - 💬 [Discord Community](https://discord.gg/simstudio)
 - 🐛 [Issue Tracker](https://github.com/simstudioai/sim/issues)
 - 📧 [Email Support](mailto:support@sim.ai) 

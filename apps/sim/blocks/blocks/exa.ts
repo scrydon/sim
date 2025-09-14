@@ -7,8 +7,8 @@ export const ExaBlock: BlockConfig<ExaResponse> = {
   name: 'Exa',
   description: 'Search with Exa AI',
   longDescription:
-    "Search the web, retrieve content, find similar links, and answer questions using Exa's powerful AI search capabilities.",
-  docsLink: 'https://docs.scrydon.eu/tools/exa',
+    'Integrate Exa into the workflow. Can search, get contents, find similar links, answer a question, and perform research. Requires API Key.',
+  docsLink: 'https://docs.scrydon.com/tools/exa',
   category: 'tools',
   bgColor: '#1F40ED',
   icon: ExaAIIcon,

@@ -7,8 +7,8 @@ export const ClayBlock: BlockConfig<ClayPopulateResponse> = {
   name: 'Clay',
   description: 'Populate Clay workbook',
   longDescription:
-    'Populate Clay workbook with data using a JSON or plain text. Enables direct communication and notifications with channel confirmation.',
-  docsLink: 'https://docs.scrydon.eu/tools/clay',
+    'Integrate Clay into the workflow. Can populate a table with data. Requires an API Key.',
+  docsLink: 'https://docs.scrydon.com/tools/clay',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: ClayIcon,

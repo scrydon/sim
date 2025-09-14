@@ -7,8 +7,8 @@ export const GmailBlock: BlockConfig<GmailToolResponse> = {
   name: 'Gmail',
   description: 'Send Gmail or trigger workflows from Gmail events',
   longDescription:
-    'Comprehensive Gmail integration with OAuth authentication. Send email messages, read email content, and trigger workflows from Gmail events like new emails and label changes.',
-  docsLink: 'https://docs.scrydon.eu/tools/gmail',
+    'Integrate Gmail into the workflow. Can send, read, and search emails. Requires OAuth. Can be used in trigger mode to trigger a workflow when a new email is received.',
+  docsLink: 'https://docs.scrydon.com/tools/gmail',
   category: 'tools',
   bgColor: '#E0E0E0',
   icon: GmailIcon,

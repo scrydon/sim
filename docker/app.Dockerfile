@@ -42,6 +42,11 @@ ENV NEXT_TELEMETRY_DISABLED=1 \
     VERCEL_TELEMETRY_DISABLED=1 \
     DOCKER_BUILD=1
 
+# Build some hardcoded variables as the built app doesn't pick up certain env variables client side anymore
+ENV NEXT_PUBLIC_BRAND_NAME="Scrydon Demo" \
+    NEXT_PUBLIC_SIM_AGENT_API_URL="https://demo.scrydon.com" \
+    NEXT_PUBLIC_SOCKET_URL="wss://demo.scrydon.com" 
+
 WORKDIR /app
 RUN bun run build
 

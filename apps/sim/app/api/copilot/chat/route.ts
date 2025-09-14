@@ -387,12 +387,18 @@ export async function POST(req: NextRequest) {
       })
     } catch {}
 
+    const headers = {
+      'Content-Type': 'application/json',
+    }
+
+    if (env.COPILOT_API_KEY) {
+      // @ts-ignore
+      headers['x-api-key'] = env.COPILOT_API_KEY
+    }
+
     const simAgentResponse = await fetch(`${SIM_AGENT_API_URL}/api/chat-completion-streaming`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        ...(env.COPILOT_API_KEY ? { 'x-api-key': env.COPILOT_API_KEY } : {}),
-      },
+      headers: headers,
       body: JSON.stringify(requestPayload),
     })
 
